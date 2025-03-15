@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ece2e9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  header {    
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    background: linear-gradient(to right, #868460, #620150);
+    text-align: center;
+  }
+  
+  section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #620150;
+    color: white;
+  }
+  
+  h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #740157;
+    font-family: "Brush Script MT", cursive;
+    font-size: 26pt;
+  }
+  
+  p {
+    letter-spacing: 1.2px;
+    font-size: 10;
+    text-align: justify;
+    
+  }
+  
+  p {
+    font-weight: bold; /* Options: normal, bold, bolder, lighter */
+  }
+  
+  #credentials ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  #credentials li {
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    border-bottom: 2px solid #d3cccc;
+    padding-bottom: 2px; 
+    font-family: "Bookman Old Style", cursive;
+    font-size: 26pt;
+  }
+  
+  .back-to-top {
+    position: fixed; /* Sticks the button in place while scrolling */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    text-decoration: none; /* Removes underline */
+    background-color: #333; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 15px; /* Adds spacing inside the button */
+    border-radius: 5px; /* Rounds the corners */
+    font-size: 14px; /* Font size */
+    box-shadow: 0 4px 6px rgba(146, 4, 103, 0.2); /* Adds a shadow for depth */
+    transition: background-color 0.3s; /* Smooth hover transition */
+  }
+  
+  .back-to-top:hover {
+    background-color: #555; /* Darker background on hover */
+  }
+  
+  .no-underline {
+    text-decoration: none; /* Removes the underline */
+    color: #0d6b16; /* Optional: Customize the link color */
+  }
+
+  .no-underline:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+  }
+
+  nav {
+    display: flex; /* Places items side by side */
+    gap: 20px; /* Adds space between the dropdowns */
+  }
+
+  /* Common dropdown styles */
+  details {
+    position: relative;
+  }
+
+  summary {
+    cursor: pointer;
+    padding: 10px;
+    background: #bcb5b5;
+    border: 1px solid #ccc;
+    text-align: center;
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+details {
+    position: relative;
+}
+
+details[open] ul {
+    display: block; /* Show the dropdown content only when details are open */
+}
+
+details ul {
+    display: none; /* Hide the dropdown content by default */
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    width: 300px; /* Match the width of the summary */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+  details:hover ul,
+  details[open] ul {
+    display: block; /* Show dropdown on hover or open */
+  }
+
+  details ul li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+
+  details ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  details ul li a:hover {
+    text-decoration: underline;
+  }
+
+  table {
+    border-collapse: separate; /* Allows spacing between rows */
+    border-spacing: 0 10px; /* Adds 10px vertical spacing between rows */
+    width: 100%; /* Optional: Makes the table take the full width */
+    border: 1px solid #ccc; /* Adds a border around the table */
+}
+
+td, th {
+    padding: 10px; /* Adds inner spacing within each cell */
+    border: 1px solid #ccc; /* Adds cell borders */
+    text-align: left; /* Aligns text to the left */
+}
+
+.work-samples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Individual Card Styling */
+.sample-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 6px solid #6b0264; /* Accent border */
+}
+
+.sample-card h3 {
+  margin: 0;
+  font-size: 1.3em;
+  color: #333;
+}
+
+.sample-card p {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #555;
+}
+
+/* Bold Subheadings */
+.sample-card p strong {
+  color: #580165; /* Accent color for labels */
+}
+
+/* Hover Effect */
+.sample-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
